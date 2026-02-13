@@ -1,0 +1,130 @@
+=== Student Management System ===
+
+-- Admin Table
+CREATE TABLE admin (
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
+    admin_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+-- ----- Student table --------
+CREATE TABLE student (
+    roll_number VARCHAR(10) PRIMARY KEY,
+    student_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    grade VARCHAR(10),
+    section VARCHAR(10),
+    fees DECIMAL(10,2),
+    address VARCHAR(100),
+    parent_name VARCHAR(50),
+    contact_number VARCHAR(15),
+    courses_enrolled VARCHAR(100)
+);
+
+*** MAIN GATE ***
+Select your role:
+1. Admin
+2. Student
+3. Exit
+---------------------------------
+
+[IF ADMIN ENTERS]
+
+Welcome Admin! 
+Choose an option:
+1. Add Student
+2. Update Student
+3. Delete Student
+4. View Student by ID
+5. View All Students
+6. Manage Courses
+7. Manage Fees
+8. Exit
+
+// Add
+Enter Student ID: 101
+Enter Name: Rahul
+Enter Age: 20
+Enter Grade: B
+Enter Fees: 15000
+Student added successfully! 🎉
+
+
+Enter Student ID to update: 101
+Enter new Name: Rahul Kumar
+Enter new Age: 21
+Enter new Grade: 
+Enter new Fees: 16000
+Student details updated successfully! ✅
+
+
+Enter Student ID to delete: 101
+Student deleted successfully! 🗑️
+
+
+Enter Student ID: 101
+Student Details:
+ID: 101
+Name: Rahul
+Age: 20
+Grade: B
+Fees: 15000
+Address: Sivakasi, India
+Parent Name: Kumar
+Contact Number: 9876543210
+Courses Enrolled: Java Basics, DBMS
+
+
+All Students:
+-------------------------------------------------
+ID: 101 | Name: Rahul | Grade: B | Fees: 15000
+ID: 102 | Name: Priya | Grade: A | Fees: 18000
+ID: 103 | Name: Arjun | Grade: C | Fees: 12000
+-------------------------------------------------
+Total Students: 3
+
+Available Courses:
+1. Java Basics
+2. DBMS
+3. Python Programming
+4. Web Development
+Enter your choice:
+Course added/updated successfully! 📚
+
+Enter Student ID: 101
+Current Fees: 15000
+Enter new Fees: 16000
+Fees updated successfully! 💰
+
+
+---------------------------------
+
+[IF STUDENT ENTERS]
+
+Welcome Student! 😊
+Choose an option:
+1. View My Details
+2. View My Fees
+3. View My Courses
+4. Exit
+
+Example (View My Details):
+--- Student Portal ---
+ID: 101
+Name: Rahul
+Age: 20
+Grade: B
+Fees Paid: 15000
+Courses Enrolled: Java Basics, DBMS
+-------------------------------
+
+Example (View My Fees):
+--- Fee Status ---
+Student ID: 102
+Name: Priya
+Total Fees: 20000
+Paid: 15000
+Pending: 5000
+Status: Pending
+------------------
