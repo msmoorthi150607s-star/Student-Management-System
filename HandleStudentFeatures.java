@@ -17,7 +17,7 @@ public class HandleStudentFeatures {
 
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your Password";
 
     String query = "SELECT * FROM student WHERE roll_number = ?";
     try (Connection connect = DriverManager.getConnection(url, user, pass);
@@ -53,7 +53,7 @@ public void getMyFees() throws SQLException {
 
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String query = "SELECT student_name, fees FROM student WHERE roll_number = ?";
 
@@ -81,7 +81,7 @@ public void getMyCourse() throws SQLException {
 
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     // Join student_course with course to get course details
     String query = "SELECT c.course_id, c.course_name, c.course_description, c.course_fee " +

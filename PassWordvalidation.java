@@ -10,7 +10,7 @@ public class PassWordvalidation {
 
         String url = "jdbc:mysql://localhost:3306/sms";
         String user = "root";
-        String pass = "Kadalamuttai@143";
+        String pass = "Your password";
         String query = "SELECT * FROM admin WHERE password = ? AND admin_name = ?";
 
         Connection connect = DriverManager.getConnection(url, user, pass);
@@ -31,7 +31,7 @@ public class PassWordvalidation {
 
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String query = "SELECT * FROM student WHERE roll_number = ? AND contact_number = ?";
 

@@ -30,7 +30,7 @@ public class HandleAdminFeatures {
 
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your Password";
 
     String query = "INSERT INTO student "
                  + "(roll_number, student_name, age, grade, section, fees, address, parent_name, contact_number, courses_enrolled) "
@@ -85,7 +85,7 @@ public class HandleAdminFeatures {
 public void UpdateStudentDetails(String rollNumber) throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your Password";
 
     int choice;
     do {
@@ -323,7 +323,7 @@ public void UpdateStudentDetails(String rollNumber) throws SQLException {
 public void ViewStudentById(String rollNo) throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String query =
         "SELECT s.roll_number, s.student_name, s.age, s.grade, s.section, " +
@@ -367,7 +367,7 @@ public void ViewStudentById(String rollNo) throws SQLException {
 public void viewAllStudent() throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String query = "SELECT * FROM student";
 
@@ -399,7 +399,7 @@ public void viewAllStudent() throws SQLException {
 public void ManageCourses() {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String query = "SELECT course_id, course_name FROM course";
     String addCourse = "INSERT INTO course (course_id, course_name, course_description, course_fee) "
@@ -464,7 +464,7 @@ public void ManageCourses() {
 public void ManageFees() {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     System.out.println("Enter Roll Number of Student:");
     String rollNumber = in.nextLine();
@@ -522,7 +522,7 @@ public void ManageFees() {
 public void DeleteStudent(String rollNumber) throws SQLException {
     String url = "jdbc:mysql://localhost:3306/sms";
     String user = "root";
-    String pass = "Kadalamuttai@143";
+    String pass = "Your password";
 
     String deleteStudentCourse = "DELETE FROM student_course WHERE roll_number = ?";
     String deleteStudent = "DELETE FROM student WHERE roll_number = ?";
